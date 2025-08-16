@@ -1,4 +1,4 @@
-CREATE TABLE "app_user" (
+CREATE TABLE app_user (
     id VARCHAR(255) NOT NULL PRIMARY KEY,
     full_name VARCHAR(255) NOT NULL,
     rg VARCHAR(12) NOT NULL UNIQUE,

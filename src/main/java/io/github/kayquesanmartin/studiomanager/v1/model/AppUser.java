@@ -1,15 +1,35 @@
 package io.github.kayquesanmartin.studiomanager.v1.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
 // POJO -> PLAIN OLD JAVA OBJECT
+@Entity
+@Table(name = "app_user")
 public class AppUser {
 
+    @Id
+    @Column(name = "id", unique = true)
     private String id;
 
+    @Column(name = "full_name")
     private String fullName;
+
+    @Column(name = "rg", unique = true)
     private String rg;
+
+    @Column(name = "postal_address")
     private String postalAddress;
+
+    @Column(name = "job")
     private String job;
+
+    @Column(name = "telephone", unique = true)
     private String telephone;
+    
+    @Column(name = "email", unique = true)
     private String email;
     
     public String getId() {
