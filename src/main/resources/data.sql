@@ -1,0 +1,9 @@
+CREATE TABLE "app_user" (
+    id VARCHAR(255) NOT NULL PRIMARY KEY,
+    full_name VARCHAR(255) NOT NULL,
+    rg VARCHAR(12) NOT NULL UNIQUE,
+    postal_address VARCHAR(255) NOT NULL,
+    job VARCHAR(255) NOT NULL,
+    telephone VARCHAR(20) NOT NULL UNIQUE,
+    email VARCHAR(255) NOT NULL UNIQUE
+);
