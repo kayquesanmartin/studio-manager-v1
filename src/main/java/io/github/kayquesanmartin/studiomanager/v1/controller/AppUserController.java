@@ -5,17 +5,17 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import io.github.kayquesanmartin.studiomanager.v1.model.User;
+import io.github.kayquesanmartin.studiomanager.v1.model.AppUser;
 
 @RestController
-@RequestMapping("/user")
-public class UserController {
+@RequestMapping("/app-user")
+public class AppUserController {
 
     @PostMapping
-    public User save(@RequestBody User user) {
-        System.out.println("Usuário salvo: " + user);
+    public AppUser save(@RequestBody AppUser appUser) {
+        System.out.println("Usuário salvo: " + appUser);
 
-        return user;
+        return appUser;
     }
 
 }
