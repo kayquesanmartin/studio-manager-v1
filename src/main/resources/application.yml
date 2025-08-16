@@ -1,0 +1,4 @@
+spring:
+    application:
+        name: Studio Manager v1
+
