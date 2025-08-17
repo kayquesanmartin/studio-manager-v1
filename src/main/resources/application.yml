@@ -10,6 +10,8 @@ spring:
     jpa:
         database-platform: org.hibernate.dialect.H2Dialect
         defer-datasource-initialization: true
+        hibernate:
+            ddl-auto: none # desabilita a criação automática do schema
     h2:
         console:
             enabled: true
